@@ -113,18 +113,6 @@ with tab6:
         col3.metric(label="Minim capacity [MW]", value=round(min_agrivolt_dc, 2))
         col4.metric(label="Maxim capacity [MW]", value=round(max_agrivolt_dc, 2))
     
-        statess = st.multiselect(
-            "Select states",
-            df_agrivolt['p_state'].sort_values().unique(),
-            placeholder="Select State"
-            )
-
-        if len(statess) == 0:
-            agrivolt_dc_capacity = df_agrivolt.groupby(df_agrivolt['p_cap_ac']).count()['p_state']
-        else:
-            agrivolt_dc_capacity = df_agrivolt[df_agrivolt['p_cap_ac'].isin(statess)]
-            df_agrivolt_dc_capacity = agrivolt_dc_capacity.groupby(['p_cap_ac']).count()['p_state']
-        st.header('DC Capacity')
         fig, ax = plt.subplots()
         sns.scatterplot(x = 'p_cap_dc', y = 'p_state', data = df_agrivolt)
         ax.set_title('DC capacity proyects')
