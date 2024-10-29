@@ -27,6 +27,9 @@ with tab1:
     view_df = st.checkbox('View Data Frame')
     if view_df:
         st.write(df)
+    count_df = df['case_id'].describe()[0]
+    col1df = st.columns(1)
+    col1df.metric(label="Total agrivoltaic proyects", value=round(count_df, 2))
 
 with tab2:
     #---¡proyectos-renovables-en-USA-por-estados!
@@ -101,8 +104,8 @@ with tab6:
         #---¡vamos-a-filtrar-por-capacidad-en-corriente-alterna-dc!
         agrivolt_dc_capacity = df_agrivolt.groupby(df_agrivolt['p_state']).count()['p_cap_ac']
         #agrivolt_ac_capacity.plot(kind = 'scatter')
-        num_columns = ['p_cap_dc']
-        cat_columns = [None, 'p_state', 'p_county']
+        #num_columns = ['p_cap_dc']
+        #cat_columns = [None, 'p_state', 'p_county']
         count_agrivolt_dc = df_agrivolt['p_cap_dc'].describe()[0]
         mean_agrivolt_dc = df_agrivolt['p_cap_dc'].describe()[1]
         min_agrivolt_dc = df_agrivolt['p_cap_dc'].describe()[3]
