@@ -16,7 +16,7 @@
 
 ## Live Demo (if available)
 
-[Portfolio](https://python-proyect-apis-photovoltaic.streamlit.app/)
+[API](https://python-proyect-apis-photovoltaic.streamlit.app/)
 
 
 ## Author
