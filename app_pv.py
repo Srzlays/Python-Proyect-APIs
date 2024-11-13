@@ -24,12 +24,15 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["Data", "Renowables",
 with tab1:
     #---¡st.checkbox¡
     #--¡para-desplregar-dataframe-,-tambien-se-puede-usar-st.toggle!
+    description = '''
+    In this we can analized a data base with agrivaoltaics proyects in USA 
+    to determine the viability of this same type proyects 
+    on Antioquia and your municipalities.
+    '''
+    st.write(description)
     view_df = st.checkbox('View Data Frame')
     if view_df:
         st.write(df)
-    count_df = df['case_id'].describe()[0]
-    col1df = st.columns(1)
-    col1df.metric(label="Total agrivoltaic proyects", value=round(count_df, 2))
 
 with tab2:
     #---¡proyectos-renovables-en-USA-por-estados!
