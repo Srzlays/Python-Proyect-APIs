@@ -25,9 +25,9 @@ with tab1:
     #---¡st.checkbox¡
     #--¡para-desplregar-dataframe-,-tambien-se-puede-usar-st.toggle!
     description = '''
-    In this we can analized a data base with agrivaoltaics proyects in USA 
+    In this APP we can analized a data base with agrivaoltaics proyects in USA 
     to determine the viability of this same type proyects 
-    on Antioquia and your municipalities.
+    on Antioquia and your municipalities. The data base was take of Sciencebase
     '''
     st.write(description)
     view_df = st.checkbox('View Data Frame')
