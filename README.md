@@ -23,8 +23,8 @@
 
 👤 **Author1**
 
-- GitHub: [@user](https://github.com/Srzlays)
-- Mail: [Mail](Srzlays@proton.me)
+- GitHub: [@Srzlays](https://github.com/Srzlays)
+- Mail: [Srzlays@proton.me]
 
 ## Show your support
 
