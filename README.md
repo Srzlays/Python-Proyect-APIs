@@ -2,7 +2,6 @@
 
 # Python-Proyect_APIs
 
-> This was a project developed for the Talentotech Region 2 Data Analysis Bootcamp Integrator Level.
 > The project determines the viability of Antioquia and its municipalities to develop agrivoltaic projects
 > according to a population metric taken from some counties in the United States of America that have
 > developed agrivoltaic projects. This project will continue to be updated to add other metrics.
